@@ -13,6 +13,8 @@
 
 ## Academy folder results/output
 
+There are 26 courses that are 8 Weeks long and 10 that are 10 Weeks long which as a result have correspondingly a different number of columns
+
 {'name': 36, 'trainer': 36, <br/>
 'Analytic_W1': 36, 'Independent_W1': 36, 'Determined_W1': 36, 'Professional_W1': 36, 'Studious_W1': 36, 'Imaginative_W1': 36, <br/>
 'Analytic_W2': 36, 'Independent_W2': 36, 'Determined_W2': 36, 'Professional_W2': 36, 'Studious_W2': 36, 'Imaginative_W2': 36, <br/>
