@@ -1,11 +1,15 @@
 import json
 import boto3
 import csv
+from botocore.exceptions import ClientError
 
 # connect to AWS s3
-s3_resource = boto3.resource('s3')
-bucket = s3_resource.Bucket('data-eng-31-final-project')
-objects = bucket.objects.filter(Prefix='Talent')
+try:
+    s3_resource = boto3.resource('s3')
+    bucket = s3_resource.Bucket('data-eng-31-final-project')
+    objects = bucket.objects.filter(Prefix='Talent')
+except ClientError as e:
+    print(e)
 
 
 # Takes in a dictionary, extracts fields and returns a list
@@ -22,17 +26,23 @@ def get_fields(id, content):
 
 # write list of lists to csv
 def write_to_csv(list_of_lists, filename="main_talent.csv"):
-    with open(filename, "a+", newline='') as csv_file1:
-        csv_writer = csv.writer(csv_file1)
-        csv_writer.writerow(['id',
-                             'name',
-                             'date',
-                             'self_development',
-                             'geo_flex',
-                             'financial_support_self',
-                             'result',
-                             'course_interest'])
-        csv_writer.writerows(list_of_lists)
+    try:
+        with open(filename, "w", newline='') as csv_file1:
+            csv_writer = csv.writer(csv_file1)
+            csv_writer.writerow(['id',
+                                 'name',
+                                 'date',
+                                 'self_development',
+                                 'geo_flex',
+                                 'financial_support_self',
+                                 'result',
+                                 'course_interest'])
+            csv_writer.writerows(list_of_lists)
+    except e:
+        print(e)
+        raise
+    finally:
+        print("main_talent.csv is created.")
 
 
 # extract data from json, writes to csv
