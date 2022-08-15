@@ -44,7 +44,7 @@ bucket_name = 'data-eng-31-final-project'
 # object_key = 'Talent/April2019Applicants.csv'
 
 prefix = 'Academy'
-object_key = 'Academy/Business_20_2019-02-11.csv'
+object_key = 'Academy/Engineering_17_2019-02-18.csv'
 
 csv_obj = open_csv_from_s3(bucket_name, object_key)
 header = create_header(csv_obj)
