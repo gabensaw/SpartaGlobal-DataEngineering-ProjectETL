@@ -1,0 +1,1001 @@
+,strength_1,strength_2,strength_3
+0,Charisma,,
+1,Patient,Curious,Problem Solving
+2,Courteous,Independent,Patient
+3,Passionate,,
+4,Versatile,,
+5,Versatile,Rational,
+6,Collaboration,,
+7,Ambitious,Independent,Passionate
+8,Reliable,Passionate,
+9,Altruism,Empathy,Problem Solving
+10,Listening,Passionate,
+11,Organisation,Passionate,Versatile
+12,Curious,Ambitious,Consistent
+13,Versatile,Ambitious,
+14,Passionate,Versatile,
+15,Efficient,Independent,
+16,Problem Solving,Altruism,
+17,Independent,,
+18,Problem Solving,Efficient,Patient
+19,Determined,,
+20,Composure,Independent,
+21,Competitive,Empathy,
+22,Problem Solving,,
+23,Composure,Problem Solving,Efficient
+24,Determined,Problem Solving,Patient
+25,Perfectionism,Charisma,
+26,Reliable,,
+27,Passionate,,
+28,Perfectionism,,
+29,Empathy,Charisma,
+30,Reliable,,
+31,Efficient,Empathy,Independent
+32,Collaboration,Curious,
+33,Reliable,,
+34,Independent,Ambitious,
+35,Curious,,
+36,Rational,Innovative,Collaboration
+37,Curious,Passionate,
+38,Rational,Innovative,Passionate
+39,Versatile,,
+40,Ambitious,Independent,
+41,Efficient,,
+42,Creative,Passionate,Reliable
+43,Problem Solving,,
+44,Consistent,Collaboration,
+45,Independent,Passionate,
+46,Passionate,,
+47,Competitive,,
+48,Versatile,Consistent,Passionate
+49,Curious,Perfectionism,Determined
+50,Courteous,Ambitious,Versatile
+51,Independent,Competitive,Determined
+52,Reliable,Curious,Courteous
+53,Courteous,Determined,
+54,Independent,,
+55,Charisma,Collaboration,Listening
+56,Rational,Passionate,
+57,Curious,Empathy,Creative
+58,Curious,Perfectionism,Determined
+59,Curious,Perfectionism,Determined
+60,Ambitious,,
+61,Consistent,,
+62,Perfectionism,,
+63,Altruism,Empathy,Innovative
+64,Rational,Organisation,Consistent
+65,Charisma,,
+66,Problem Solving,,
+67,Versatile,,
+68,Consistent,,
+69,Composure,Charisma,Rational
+70,Efficient,,
+71,Passionate,Reliable,Altruism
+72,Efficient,Perfectionism,
+73,Empathy,Curious,
+74,Courteous,Curious,Organisation
+75,Organisation,Courteous,
+76,Rational,Charisma,
+77,Perfectionism,Ambitious,
+78,Charisma,Creative,Curious
+79,Competitive,Versatile,
+80,Critical Thinking,,
+81,Passionate,Altruism,Courteous
+82,Curious,,
+83,Versatile,Creative,
+84,Critical Thinking,,
+85,Composure,Organisation,
+86,Ambitious,,
+87,Perfectionism,Courteous,
+88,Altruism,Collaboration,
+89,Perfectionism,Collaboration,Patient
+90,Passionate,Versatile,
+91,Listening,,
+92,Patient,,
+93,Consistent,Creative,
+94,Determined,,
+95,Charisma,Altruism,Perfectionism
+96,Altruism,,
+97,Rational,Determined,Organisation
+98,Courteous,Rational,
+99,Independent,Problem Solving,
+100,Listening,Independent,Organisation
+101,Competitive,Charisma,
+102,Empathy,,
+103,Altruism,,
+104,Problem Solving,,
+105,Charisma,Passionate,Creative
+106,Perfectionism,Efficient,Listening
+107,Reliable,Patient,Rational
+108,Altruism,Competitive,Charisma
+109,Listening,,
+110,Perfectionism,Listening,Ambitious
+111,Problem Solving,,
+112,Composure,Versatile,
+113,Ambitious,Reliable,Determined
+114,Rational,,
+115,Listening,,
+116,Problem Solving,Efficient,
+117,Independent,Perfectionism,
+118,Listening,,
+119,Problem Solving,Altruism,Patient
+120,Courteous,,
+121,Consistent,Innovative,
+122,Efficient,Critical Thinking,Creative
+123,Passionate,Composure,Determined
+124,Collaboration,Determined,Consistent
+125,Creative,,
+126,Competitive,Critical Thinking,Courteous
+127,Empathy,Courteous,
+128,Efficient,Passionate,
+129,Competitive,Empathy,
+130,Innovative,Consistent,Collaboration
+131,Curious,Perfectionism,Critical Thinking
+132,Innovative,Empathy,
+133,Curious,Altruism,Collaboration
+134,Courteous,Reliable,
+135,Altruism,Collaboration,
+136,Consistent,Independent,
+137,Patient,Perfectionism,
+138,Versatile,Problem Solving,
+139,Organisation,Patient,Problem Solving
+140,Courteous,Empathy,Organisation
+141,Creative,Reliable,
+142,Problem Solving,Courteous,
+143,Passionate,Versatile,
+144,Altruism,Efficient,Competitive
+145,Composure,Independent,Innovative
+146,Perfectionism,,
+147,Altruism,,
+148,Composure,Independent,
+149,Independent,,
+150,Efficient,Competitive,
+151,Collaboration,Perfectionism,
+152,Altruism,Collaboration,Empathy
+153,Critical Thinking,Innovative,
+154,Critical Thinking,Innovative,
+155,Courteous,Efficient,
+156,Problem Solving,Altruism,Ambitious
+157,Innovative,Efficient,
+158,Consistent,Efficient,
+159,Perfectionism,,
+160,Independent,,
+161,Competitive,,
+162,Consistent,Independent,Composure
+163,Problem Solving,Ambitious,Courteous
+164,Charisma,Courteous,Collaboration
+165,Creative,Listening,Altruism
+166,Altruism,Problem Solving,Versatile
+167,Collaboration,Curious,Passionate
+168,Altruism,,
+169,Problem Solving,Passionate,
+170,Courteous,Versatile,Organisation
+171,Composure,Patient,
+172,Altruism,Innovative,
+173,Efficient,Empathy,
+174,Creative,Critical Thinking,
+175,Collaboration,Problem Solving,
+176,Empathy,Competitive,
+177,Rational,Innovative,Versatile
+178,Collaboration,,
+179,Courteous,,
+180,Creative,Empathy,Innovative
+181,Collaboration,Consistent,
+182,Competitive,Listening,Curious
+183,Independent,Critical Thinking,
+184,Curious,Reliable,Competitive
+185,Creative,,
+186,Organisation,,
+187,Problem Solving,,
+188,Competitive,Consistent,
+189,Listening,Organisation,Consistent
+190,Independent,,
+191,Innovative,,
+192,Critical Thinking,,
+193,Reliable,Determined,Consistent
+194,Efficient,Creative,
+195,Listening,,
+196,Consistent,,
+197,Organisation,Ambitious,
+198,Collaboration,Efficient,Organisation
+199,Efficient,,
+200,Independent,Competitive,Consistent
+201,Consistent,,
+202,Rational,Courteous,Efficient
+203,Courteous,Passionate,
+204,Courteous,Ambitious,Organisation
+205,Collaboration,Patient,Determined
+206,Ambitious,Empathy,
+207,Organisation,Altruism,
+208,Problem Solving,,
+209,Altruism,Rational,Collaboration
+210,Rational,Curious,Courteous
+211,Rational,Curious,Courteous
+212,Ambitious,Determined,
+213,Versatile,,
+214,Consistent,,
+215,Empathy,,
+216,Versatile,Critical Thinking,
+217,Collaboration,Perfectionism,Independent
+218,Organisation,,
+219,Efficient,,
+220,Courteous,,
+221,Rational,Courteous,
+222,Empathy,,
+223,Perfectionism,Innovative,Creative
+224,Curious,,
+225,Versatile,,
+226,Independent,Patient,Passionate
+227,Altruism,,
+228,Listening,,
+229,Independent,Listening,
+230,Curious,Ambitious,Patient
+231,Listening,,
+232,Patient,Competitive,
+233,Perfectionism,,
+234,Perfectionism,Competitive,
+235,Charisma,Creative,Curious
+236,Curious,,
+237,Ambitious,Patient,
+238,Determined,Collaboration,
+239,Curious,Perfectionism,
+240,Determined,Patient,Critical Thinking
+241,Courteous,Patient,
+242,Courteous,,
+243,Organisation,Empathy,Innovative
+244,Determined,Critical Thinking,Ambitious
+245,Problem Solving,Patient,Ambitious
+246,Perfectionism,,
+247,Altruism,,
+248,Innovative,Listening,Courteous
+249,Creative,,
+250,Efficient,Independent,Critical Thinking
+251,Ambitious,,
+252,Altruism,,
+253,Organisation,Composure,Reliable
+254,Problem Solving,Charisma,Collaboration
+255,Patient,Listening,
+256,Problem Solving,Listening,
+257,Creative,Versatile,
+258,Consistent,Altruism,
+259,Competitive,,
+260,Altruism,Curious,
+261,Problem Solving,,
+262,Innovative,,
+263,Empathy,Independent,Critical Thinking
+264,Versatile,,
+265,Consistent,Altruism,
+266,Problem Solving,,
+267,Passionate,Organisation,Critical Thinking
+268,Competitive,Versatile,
+269,Courteous,,
+270,Problem Solving,Rational,
+271,Consistent,Creative,Organisation
+272,Consistent,,
+273,Determined,Patient,
+274,Listening,,
+275,Charisma,Perfectionism,Rational
+276,Innovative,,
+277,Listening,Curious,
+278,Versatile,Empathy,
+279,Passionate,Efficient,Charisma
+280,Courteous,Independent,
+281,Reliable,,
+282,Altruism,,
+283,Innovative,,
+284,Altruism,Charisma,
+285,Creative,Empathy,
+286,Listening,Determined,
+287,Creative,Ambitious,
+288,Collaboration,Ambitious,
+289,Reliable,Determined,
+290,Altruism,Listening,Problem Solving
+291,Rational,Listening,Organisation
+292,Composure,Collaboration,
+293,Listening,Reliable,Passionate
+294,Composure,,
+295,Competitive,Ambitious,
+296,Listening,Reliable,Efficient
+297,Creative,,
+298,Composure,Innovative,
+299,Composure,,
+300,Rational,,
+301,Organisation,,
+302,Problem Solving,Competitive,Versatile
+303,Consistent,Innovative,Rational
+304,Competitive,Listening,
+305,Collaboration,Creative,Rational
+306,Altruism,Efficient,Critical Thinking
+307,Passionate,,
+308,Curious,Passionate,Listening
+309,Courteous,Altruism,Independent
+310,Independent,Problem Solving,Passionate
+311,Reliable,,
+312,Empathy,Consistent,Patient
+313,Organisation,,
+314,Altruism,Problem Solving,Listening
+315,Problem Solving,Passionate,Altruism
+316,Courteous,,
+317,Curious,,
+318,Problem Solving,,
+319,Empathy,Organisation,
+320,Versatile,Critical Thinking,
+321,Determined,Critical Thinking,
+322,Problem Solving,Reliable,Charisma
+323,Determined,,
+324,Independent,Competitive,
+325,Rational,Composure,
+326,Critical Thinking,,
+327,Problem Solving,Ambitious,Perfectionism
+328,Critical Thinking,,
+329,Innovative,,
+330,Determined,Curious,
+331,Creative,Perfectionism,Consistent
+332,Creative,Efficient,Ambitious
+333,Ambitious,Passionate,
+334,Curious,Composure,Independent
+335,Creative,Innovative,
+336,Efficient,Empathy,Curious
+337,Versatile,Competitive,Rational
+338,Organisation,,
+339,Problem Solving,Innovative,Critical Thinking
+340,Organisation,Collaboration,Altruism
+341,Perfectionism,,
+342,Determined,Creative,
+343,Listening,,
+344,Courteous,Critical Thinking,Innovative
+345,Altruism,Empathy,Perfectionism
+346,Determined,Critical Thinking,
+347,Altruism,Creative,Problem Solving
+348,Competitive,Listening,
+349,Collaboration,Consistent,
+350,Perfectionism,,
+351,Independent,Collaboration,Creative
+352,Determined,Independent,Courteous
+353,Creative,Efficient,
+354,Creative,Efficient,
+355,Perfectionism,,
+356,Courteous,,
+357,Altruism,Collaboration,Composure
+358,Independent,Problem Solving,
+359,Problem Solving,,
+360,Patient,Ambitious,Passionate
+361,Determined,,
+362,Determined,Listening,
+363,Rational,,
+364,Determined,Passionate,
+365,Perfectionism,Patient,Organisation
+366,Independent,Composure,Altruism
+367,Independent,Consistent,
+368,Empathy,Perfectionism,
+369,Versatile,Passionate,Efficient
+370,Composure,Versatile,Problem Solving
+371,Collaboration,Empathy,
+372,Altruism,,
+373,Listening,,
+374,Perfectionism,,
+375,Courteous,,
+376,Problem Solving,Perfectionism,
+377,Versatile,Ambitious,
+378,Creative,Listening,
+379,Courteous,Altruism,
+380,Competitive,Independent,
+381,Courteous,Patient,Creative
+382,Innovative,Reliable,Curious
+383,Ambitious,,
+384,Independent,Critical Thinking,Ambitious
+385,Collaboration,Innovative,
+386,Altruism,Organisation,Collaboration
+387,Altruism,Competitive,Critical Thinking
+388,Composure,Rational,
+389,Competitive,,
+390,Consistent,Perfectionism,
+391,Perfectionism,Rational,
+392,Passionate,Organisation,
+393,Efficient,Innovative,
+394,Efficient,,
+395,Innovative,Listening,Competitive
+396,Organisation,Charisma,Problem Solving
+397,Listening,Collaboration,Independent
+398,Perfectionism,Efficient,Passionate
+399,Rational,Courteous,
+400,Versatile,Courteous,
+401,Creative,Charisma,
+402,Determined,,
+403,Versatile,Curious,Determined
+404,Organisation,,
+405,Innovative,Versatile,
+406,Patient,Determined,Innovative
+407,Empathy,Competitive,
+408,Consistent,,
+409,Perfectionism,Independent,Critical Thinking
+410,Listening,Rational,
+411,Perfectionism,Charisma,
+412,Creative,,
+413,Patient,Perfectionism,
+414,Determined,Listening,
+415,Independent,,
+416,Versatile,Determined,Problem Solving
+417,Composure,,
+418,Perfectionism,,
+419,Independent,,
+420,Problem Solving,,
+421,Independent,,
+422,Innovative,Patient,
+423,Collaboration,Organisation,Ambitious
+424,Independent,Listening,Reliable
+425,Rational,Organisation,
+426,Creative,Consistent,
+427,Versatile,Organisation,Critical Thinking
+428,Courteous,,
+429,Organisation,Creative,Consistent
+430,Collaboration,Rational,
+431,Collaboration,Competitive,
+432,Patient,Collaboration,Competitive
+433,Versatile,Composure,
+434,Altruism,,
+435,Composure,Efficient,
+436,Altruism,,
+437,Altruism,Perfectionism,
+438,Determined,Reliable,Creative
+439,Collaboration,Problem Solving,Organisation
+440,Empathy,Efficient,Listening
+441,Innovative,Charisma,Critical Thinking
+442,Charisma,Critical Thinking,
+443,Courteous,Organisation,Listening
+444,Efficient,Consistent,
+445,Courteous,Passionate,Empathy
+446,Composure,Listening,
+447,Composure,Organisation,Consistent
+448,Composure,,
+449,Determined,Curious,
+450,Innovative,Competitive,
+451,Reliable,Rational,Independent
+452,Determined,,
+453,Creative,Collaboration,
+454,Curious,,
+455,Reliable,Versatile,Innovative
+456,Ambitious,Determined,
+457,Reliable,Empathy,Curious
+458,Determined,Empathy,Organisation
+459,Composure,Independent,
+460,Versatile,,
+461,Collaboration,Charisma,
+462,Consistent,Competitive,Charisma
+463,Passionate,Altruism,
+464,Listening,Competitive,Charisma
+465,Altruism,,
+466,Altruism,,
+467,Problem Solving,Reliable,Consistent
+468,Curious,Organisation,Versatile
+469,Efficient,Charisma,
+470,Innovative,Composure,
+471,Reliable,,
+472,Curious,Passionate,
+473,Empathy,Organisation,
+474,Listening,,
+475,Altruism,Passionate,Rational
+476,Competitive,Collaboration,
+477,Passionate,Empathy,
+478,Listening,Altruism,Problem Solving
+479,Creative,Perfectionism,Passionate
+480,Organisation,Passionate,Consistent
+481,Competitive,Collaboration,Courteous
+482,Altruism,Efficient,Rational
+483,Empathy,Listening,Competitive
+484,Versatile,,
+485,Problem Solving,Critical Thinking,
+486,Courteous,,
+487,Efficient,,
+488,Composure,Reliable,Creative
+489,Listening,,
+490,Collaboration,Independent,Ambitious
+491,Charisma,,
+492,Courteous,Rational,Problem Solving
+493,Composure,Courteous,Passionate
+494,Problem Solving,Patient,
+495,Curious,,
+496,Innovative,Listening,Perfectionism
+497,Rational,Perfectionism,Curious
+498,Perfectionism,Patient,Creative
+499,Critical Thinking,,
+500,Creative,Problem Solving,
+501,Innovative,Patient,
+502,Organisation,Competitive,Reliable
+503,Altruism,Problem Solving,Versatile
+504,Perfectionism,,
+505,Collaboration,Charisma,Critical Thinking
+506,Independent,,
+507,Problem Solving,Patient,
+508,Listening,Versatile,
+509,Versatile,Reliable,Consistent
+510,Courteous,,
+511,Composure,Competitive,
+512,Organisation,Problem Solving,
+513,Creative,Patient,Composure
+514,Empathy,Collaboration,
+515,Problem Solving,,
+516,Innovative,Altruism,Determined
+517,Collaboration,Efficient,
+518,Reliable,,
+519,Composure,Reliable,Consistent
+520,Consistent,Composure,
+521,Composure,Innovative,
+522,Courteous,Composure,
+523,Competitive,,
+524,Courteous,Problem Solving,Rational
+525,Altruism,Consistent,
+526,Determined,Charisma,Composure
+527,Composure,Patient,
+528,Courteous,Rational,Creative
+529,Composure,,
+530,Critical Thinking,Versatile,
+531,Composure,Collaboration,Versatile
+532,Ambitious,Charisma,
+533,Patient,,
+534,Creative,Consistent,
+535,Patient,Organisation,Efficient
+536,Versatile,Courteous,Listening
+537,Organisation,,
+538,Rational,Composure,
+539,Critical Thinking,Organisation,Perfectionism
+540,Listening,Courteous,
+541,Competitive,,
+542,Problem Solving,,
+543,Ambitious,,
+544,Rational,,
+545,Ambitious,Collaboration,
+546,Reliable,Rational,Charisma
+547,Altruism,Composure,
+548,Charisma,Critical Thinking,Problem Solving
+549,Efficient,Competitive,
+550,Patient,,
+551,Consistent,,
+552,Ambitious,Efficient,Versatile
+553,Rational,Listening,
+554,Creative,Innovative,Collaboration
+555,Innovative,Altruism,Consistent
+556,Consistent,,
+557,Listening,Composure,
+558,Composure,Determined,
+559,Empathy,Versatile,Organisation
+560,Organisation,Curious,
+561,Charisma,Determined,
+562,Altruism,,
+563,Creative,,
+564,Rational,Competitive,
+565,Efficient,Patient,
+566,Rational,,
+567,Curious,Problem Solving,
+568,Problem Solving,Creative,Versatile
+569,Consistent,,
+570,Innovative,Creative,
+571,Efficient,Reliable,Perfectionism
+572,Rational,,
+573,Independent,,
+574,Curious,,
+575,Ambitious,Altruism,Reliable
+576,Composure,Efficient,
+577,Courteous,,
+578,Patient,Altruism,Creative
+579,Composure,,
+580,Consistent,Independent,Curious
+581,Collaboration,,
+582,Collaboration,Determined,
+583,Reliable,Consistent,
+584,Altruism,,
+585,Passionate,Ambitious,Reliable
+586,Versatile,,
+587,Independent,Collaboration,
+588,Composure,Patient,Charisma
+589,Problem Solving,Ambitious,Patient
+590,Ambitious,Consistent,
+591,Reliable,Patient,
+592,Innovative,Curious,Problem Solving
+593,Rational,Reliable,Critical Thinking
+594,Independent,Altruism,
+595,Competitive,Rational,
+596,Altruism,Charisma,
+597,Consistent,,
+598,Ambitious,,
+599,Problem Solving,Listening,
+600,Ambitious,Patient,
+601,Listening,,
+602,Composure,,
+603,Problem Solving,Empathy,Altruism
+604,Organisation,,
+605,Independent,,
+606,Perfectionism,Independent,
+607,Competitive,,
+608,Passionate,Ambitious,
+609,Perfectionism,,
+610,Problem Solving,,
+611,Composure,Empathy,
+612,Versatile,Perfectionism,
+613,Determined,Problem Solving,
+614,Perfectionism,,
+615,Problem Solving,Organisation,
+616,Efficient,,
+617,Independent,Efficient,
+618,Courteous,,
+619,Versatile,Charisma,
+620,Organisation,Independent,Altruism
+621,Ambitious,,
+622,Patient,Innovative,
+623,Critical Thinking,Creative,Courteous
+624,Determined,Creative,Rational
+625,Determined,,
+626,Composure,,
+627,Independent,,
+628,Creative,Independent,Organisation
+629,Perfectionism,Efficient,Creative
+630,Competitive,,
+631,Organisation,Curious,
+632,Composure,Competitive,Independent
+633,Organisation,,
+634,Listening,Altruism,Competitive
+635,Listening,Ambitious,
+636,Rational,,
+637,Passionate,Creative,
+638,Competitive,Collaboration,Problem Solving
+639,Listening,Independent,
+640,Competitive,Versatile,Determined
+641,Empathy,Creative,Patient
+642,Composure,Consistent,
+643,Collaboration,Charisma,Curious
+644,Perfectionism,Courteous,Composure
+645,Reliable,Critical Thinking,
+646,Curious,Versatile,Ambitious
+647,Independent,,
+648,Competitive,Rational,Reliable
+649,Courteous,,
+650,Ambitious,Rational,Consistent
+651,Determined,Patient,
+652,Perfectionism,Versatile,
+653,Competitive,,
+654,Organisation,,
+655,Reliable,,
+656,Consistent,,
+657,Composure,,
+658,Empathy,Rational,Reliable
+659,Rational,Determined,Independent
+660,Consistent,,
+661,Versatile,Ambitious,
+662,Versatile,Critical Thinking,
+663,Curious,,
+664,Reliable,Ambitious,Curious
+665,Perfectionism,Ambitious,Innovative
+666,Passionate,,
+667,Empathy,Perfectionism,Consistent
+668,Charisma,Independent,Patient
+669,Organisation,Charisma,
+670,Perfectionism,Charisma,
+671,Listening,Collaboration,
+672,Problem Solving,,
+673,Reliable,Problem Solving,Innovative
+674,Patient,,
+675,Critical Thinking,,
+676,Consistent,Competitive,
+677,Organisation,Problem Solving,Collaboration
+678,Altruism,Competitive,
+679,Independent,Collaboration,
+680,Versatile,Curious,Organisation
+681,Listening,Problem Solving,
+682,Altruism,Listening,
+683,Creative,Determined,Altruism
+684,Courteous,Listening,
+685,Independent,,
+686,Rational,Reliable,Passionate
+687,Perfectionism,Determined,
+688,Competitive,,
+689,Organisation,,
+690,Collaboration,Courteous,Versatile
+691,Rational,Versatile,Charisma
+692,Critical Thinking,,
+693,Problem Solving,,
+694,Determined,Reliable,Creative
+695,Collaboration,Competitive,Rational
+696,Determined,Independent,Versatile
+697,Empathy,,
+698,Patient,Listening,
+699,Innovative,Determined,
+700,Innovative,Determined,
+701,Empathy,,
+702,Ambitious,,
+703,Problem Solving,Composure,Collaboration
+704,Problem Solving,Competitive,Rational
+705,Composure,,
+706,Composure,,
+707,Perfectionism,,
+708,Organisation,Consistent,Determined
+709,Organisation,Passionate,Patient
+710,Determined,Ambitious,
+711,Innovative,,
+712,Critical Thinking,,
+713,Reliable,Organisation,
+714,Problem Solving,Empathy,
+715,Innovative,Courteous,Consistent
+716,Reliable,Versatile,Determined
+717,Rational,,
+718,Reliable,Critical Thinking,
+719,Passionate,Creative,
+720,Curious,Ambitious,
+721,Efficient,Competitive,
+722,Organisation,Consistent,Ambitious
+723,Organisation,,
+724,Ambitious,,
+725,Courteous,Creative,Versatile
+726,Organisation,,
+727,Consistent,Rational,Critical Thinking
+728,Curious,Empathy,Determined
+729,Problem Solving,,
+730,Rational,Empathy,Critical Thinking
+731,Altruism,Innovative,Competitive
+732,Listening,Altruism,Passionate
+733,Composure,Perfectionism,
+734,Innovative,Consistent,
+735,Charisma,Collaboration,Problem Solving
+736,Competitive,Versatile,
+737,Composure,Organisation,
+738,Determined,,
+739,Patient,Consistent,
+740,Patient,Independent,Curious
+741,Innovative,Listening,
+742,Creative,Innovative,Determined
+743,Listening,Creative,Efficient
+744,Independent,,
+745,Curious,Perfectionism,
+746,Collaboration,Determined,Independent
+747,Patient,,
+748,Critical Thinking,Determined,Curious
+749,Creative,Independent,Reliable
+750,Listening,Empathy,
+751,Passionate,,
+752,Ambitious,Consistent,Passionate
+753,Patient,Ambitious,
+754,Altruism,Independent,
+755,Problem Solving,Innovative,Listening
+756,Empathy,,
+757,Rational,Reliable,Competitive
+758,Empathy,,
+759,Courteous,Efficient,Problem Solving
+760,Ambitious,,
+761,Composure,Courteous,
+762,Consistent,,
+763,Creative,,
+764,Reliable,Perfectionism,Ambitious
+765,Organisation,Reliable,Creative
+766,Reliable,,
+767,Listening,,
+768,Versatile,,
+769,Innovative,Creative,
+770,Composure,Empathy,Courteous
+771,Altruism,,
+772,Collaboration,,
+773,Courteous,Problem Solving,
+774,Collaboration,Composure,
+775,Efficient,Empathy,Curious
+776,Efficient,Empathy,Curious
+777,Consistent,,
+778,Curious,Versatile,
+779,Patient,Courteous,
+780,Altruism,Efficient,Courteous
+781,Reliable,,
+782,Charisma,,
+783,Innovative,,
+784,Charisma,,
+785,Versatile,,
+786,Courteous,,
+787,Charisma,,
+788,Organisation,Charisma,
+789,Organisation,Efficient,Critical Thinking
+790,Rational,Problem Solving,Critical Thinking
+791,Innovative,Creative,Passionate
+792,Organisation,Charisma,
+793,Patient,,
+794,Determined,Perfectionism,
+795,Courteous,Ambitious,
+796,Listening,,
+797,Organisation,Collaboration,
+798,Reliable,,
+799,Independent,Creative,Composure
+800,Innovative,Empathy,
+801,Empathy,Critical Thinking,
+802,Critical Thinking,,
+803,Composure,Charisma,
+804,Courteous,,
+805,Perfectionism,Empathy,
+806,Critical Thinking,Courteous,Empathy
+807,Versatile,Passionate,
+808,Independent,,
+809,Determined,,
+810,Altruism,,
+811,Rational,Determined,Charisma
+812,Versatile,Perfectionism,Critical Thinking
+813,Patient,,
+814,Altruism,,
+815,Curious,Consistent,
+816,Perfectionism,Composure,Passionate
+817,Curious,Creative,Critical Thinking
+818,Listening,Independent,
+819,Patient,Collaboration,
+820,Critical Thinking,Ambitious,
+821,Ambitious,,
+822,Critical Thinking,Passionate,
+823,Versatile,Charisma,Collaboration
+824,Consistent,Creative,Passionate
+825,Listening,Critical Thinking,Consistent
+826,Critical Thinking,,
+827,Curious,,
+828,Courteous,Determined,
+829,Independent,,
+830,Competitive,Patient,Problem Solving
+831,Competitive,Patient,Problem Solving
+832,Reliable,,
+833,Courteous,,
+834,Reliable,,
+835,Perfectionism,Passionate,
+836,Charisma,Reliable,Organisation
+837,Patient,Collaboration,
+838,Consistent,,
+839,Efficient,,
+840,Versatile,Composure,Efficient
+841,Independent,Determined,Listening
+842,Critical Thinking,,
+843,Versatile,Altruism,Critical Thinking
+844,Empathy,Determined,Courteous
+845,Critical Thinking,Collaboration,
+846,Competitive,Problem Solving,
+847,Determined,Passionate,Rational
+848,Perfectionism,Versatile,
+849,Consistent,Creative,
+850,Competitive,Efficient,
+851,Altruism,,
+852,Altruism,,
+853,Composure,Passionate,Courteous
+854,Perfectionism,,
+855,Independent,Perfectionism,Collaboration
+856,Creative,,
+857,Critical Thinking,Courteous,
+858,Listening,Perfectionism,
+859,Perfectionism,Collaboration,Ambitious
+860,Competitive,,
+861,Empathy,Composure,
+862,Consistent,Charisma,Composure
+863,Critical Thinking,Patient,Collaboration
+864,Independent,,
+865,Empathy,Composure,
+866,Determined,Charisma,
+867,Creative,Innovative,Charisma
+868,Charisma,,
+869,Creative,,
+870,Competitive,,
+871,Listening,Ambitious,Efficient
+872,Courteous,,
+873,Listening,Independent,
+874,Competitive,,
+875,Curious,,
+876,Creative,,
+877,Perfectionism,Rational,Reliable
+878,Reliable,Problem Solving,Empathy
+879,Listening,Competitive,
+880,Competitive,,
+881,Problem Solving,,
+882,Reliable,Critical Thinking,Organisation
+883,Determined,,
+884,Altruism,Independent,Ambitious
+885,Passionate,Competitive,Ambitious
+886,Curious,Innovative,
+887,Listening,Innovative,Composure
+888,Listening,Innovative,Composure
+889,Competitive,Creative,
+890,Efficient,Altruism,
+891,Empathy,Listening,
+892,Critical Thinking,Consistent,Courteous
+893,Organisation,,
+894,Determined,Rational,
+895,Determined,Rational,
+896,Altruism,Critical Thinking,
+897,Efficient,Charisma,
+898,Competitive,Reliable,Listening
+899,Organisation,,
+900,Passionate,,
+901,Rational,Independent,
+902,Critical Thinking,,
+903,Consistent,Ambitious,Critical Thinking
+904,Organisation,Perfectionism,
+905,Empathy,Rational,Listening
+906,Ambitious,Organisation,
+907,Passionate,Efficient,Independent
+908,Collaboration,Competitive,
+909,Passionate,Creative,Empathy
+910,Determined,,
+911,Composure,,
+912,Organisation,Reliable,
+913,Innovative,,
+914,Rational,Reliable,
+915,Independent,,
+916,Charisma,Curious,
+917,Curious,Consistent,
+918,Independent,Passionate,Courteous
+919,Problem Solving,Composure,
+920,Problem Solving,Curious,Independent
+921,Passionate,Courteous,
+922,Curious,Collaboration,
+923,Collaboration,Competitive,
+924,Passionate,Listening,
+925,Consistent,Independent,Perfectionism
+926,Empathy,Versatile,Consistent
+927,Collaboration,Creative,
+928,Consistent,Altruism,
+929,Organisation,Passionate,Curious
+930,Determined,,
+931,Reliable,Rational,
+932,Organisation,Perfectionism,
+933,Patient,Perfectionism,Empathy
+934,Collaboration,Problem Solving,
+935,Determined,Problem Solving,Ambitious
+936,Composure,,
+937,Determined,Charisma,
+938,Listening,Curious,Critical Thinking
+939,Determined,,
+940,Passionate,Altruism,Creative
+941,Curious,Reliable,
+942,Organisation,Critical Thinking,Curious
+943,Passionate,Courteous,Critical Thinking
+944,Independent,,
+945,Composure,,
+946,Collaboration,,
+947,Courteous,,
+948,Composure,,
+949,Passionate,Courteous,
+950,Collaboration,Determined,Efficient
+951,Independent,,
+952,Reliable,,
+953,Listening,Patient,Collaboration
+954,Composure,Efficient,
+955,Patient,,
+956,Listening,,
+957,Independent,Perfectionism,
+958,Determined,,
+959,Organisation,Creative,Ambitious
+960,Organisation,Creative,Consistent
+961,Altruism,,
+962,Problem Solving,,
+963,Reliable,Creative,
+964,Determined,Charisma,
+965,Independent,Organisation,Ambitious
+966,Collaboration,Empathy,
+967,Ambitious,Composure,
+968,Independent,,
+969,Altruism,,
+970,Rational,Altruism,
+971,Courteous,Independent,Critical Thinking
+972,Empathy,,
+973,Independent,Listening,Passionate
+974,Composure,Patient,
+975,Efficient,Passionate,Critical Thinking
+976,Critical Thinking,Composure,Perfectionism
+977,Versatile,Ambitious,
+978,Independent,Ambitious,Charisma
+979,Competitive,Independent,Critical Thinking
+980,Empathy,Courteous,Innovative
+981,Problem Solving,Versatile,Consistent
+982,Innovative,,
+983,Rational,Patient,Altruism
+984,Courteous,Reliable,
+985,Organisation,Consistent,
+986,Rational,Independent,
+987,Creative,Rational,Problem Solving
+988,Listening,Curious,Courteous
+989,Organisation,Ambitious,Rational
+990,Consistent,,
+991,Altruism,,
+992,Perfectionism,Organisation,
+993,Consistent,Collaboration,
+994,Passionate,Independent,
+995,Collaboration,Passionate,Versatile
+996,Composure,Determined,
+997,Reliable,Listening,Consistent
+998,Efficient,,
+999,Competitive,,
