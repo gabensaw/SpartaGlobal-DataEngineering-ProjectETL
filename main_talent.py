@@ -3,14 +3,6 @@ import boto3
 import csv
 from botocore.exceptions import ClientError
 
-# connect to AWS s3
-try:
-    s3_resource = boto3.resource('s3')
-    bucket = s3_resource.Bucket('data-eng-31-final-project')
-    objects = bucket.objects.filter(Prefix='Talent')
-except ClientError as e:
-    print(e)
-
 
 def create_tech_self_score_list(u_id, self_scores):
     # List of lists to store tech self scores
@@ -96,8 +88,8 @@ def write_to_csv(list_of_lists, out_type):
         headers = ['id', 'weaknesses']
 
     try:
-        with open(filename, "w", newline='') as csv_file1:
-            csv_writer = csv.writer(csv_file1)
+        with open(filename, "w", newline='') as new_csv_file:
+            csv_writer = csv.writer(new_csv_file)
             csv_writer.writerow(headers)
             csv_writer.writerows(list_of_lists)
     except e:
@@ -147,4 +139,12 @@ def extract(talent_object):
     write_to_csv(weaknesses, "weaknesses")
 
 
-extract(objects)
+# connect to AWS s3
+try:
+    s3_resource = boto3.resource('s3')
+    bucket = s3_resource.Bucket('data-eng-31-final-project')
+    talent_files = bucket.objects.filter(Prefix='Talent')
+except ClientError as e:
+    print(e)
+
+extract(talent_files)
