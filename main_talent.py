@@ -72,7 +72,7 @@ def get_fields(content, content_type):
         return [content["weaknesses"]]
 
 
-# write list of lists to csv
+# Write list of lists to CSV files
 def write_to_csv(list_of_lists, out_type):
     filename = ""
     headers = []
@@ -107,7 +107,7 @@ def write_to_csv(list_of_lists, out_type):
         print(filename + " is created.")
 
 
-# extract data from json, writes to csv
+# Extract data from JSON files and write to CSV files.
 def extract(talent_object):
     main_talent = []
     tech_self_scores = []
@@ -117,12 +117,14 @@ def extract(talent_object):
     for u_id, obj in enumerate(talent_object, 1):
         if obj.key.endswith('.json'):
 
+            # Parse JSON files.
             file_content = obj.get()['Body'].read().decode('utf-8')
             json_content = json.loads(file_content)
 
             person = get_fields(json_content, "main")
             main_talent.append(person)
 
+            # Skip getting self scores if they are not available.
             if get_fields(json_content, "self_scores") is not False:
                 tech_self_score_sublist = get_fields(json_content, "self_scores")
                 tech_self_scores.append(create_tech_self_score_list(u_id, tech_self_score_sublist))
@@ -133,10 +135,12 @@ def extract(talent_object):
             weaknesses_sublist = get_fields(json_content, "weaknesses")
             weaknesses.append(create_weaknesses_list(u_id, weaknesses_sublist))
 
+    # Join lists within lists.
     tech_self_scores = sum(tech_self_scores, [])
     strengths = sum(strengths, [])
     weaknesses = sum(weaknesses, [])
 
+    # Transfer lists to CSVs.
     write_to_csv(main_talent, "main")
     write_to_csv(tech_self_scores, "self_scores")
     write_to_csv(strengths, "strengths")
