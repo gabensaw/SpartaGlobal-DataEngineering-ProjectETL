@@ -1,5 +1,4 @@
 import boto3
-import csv
 
 
 def open_csv_from_s3(bucket, key):
@@ -40,15 +39,15 @@ def write_csv(filename, h_data, c_data):
 
 bucket_name = 'data-eng-31-final-project'
 
-# prefix = 'Talent'
-# object_key = 'Talent/April2019Applicants.csv'
+prefix = 'Talent'
+object_key = 'Talent/April2019Applicants.csv'
 
-prefix = 'Academy'
-object_key = 'Academy/Engineering_17_2019-02-18.csv'
+# prefix = 'Academy'
+# object_key = 'Academy/Engineering_17_2019-02-18.csv'
 
 csv_obj = open_csv_from_s3(bucket_name, object_key)
 header = create_header(csv_obj)
 content = get_all_csvs_from_s3(bucket_name, prefix)
 
-write_csv('academy.csv', header, content)
-# write_csv('talent.csv', header, content)
+# write_csv('academy.csv', header, content)
+write_csv('talent.csv', header, content)
