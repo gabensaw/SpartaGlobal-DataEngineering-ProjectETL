@@ -23,11 +23,23 @@ columns_to_int_transformation = ['Analytic_W1', 'Independent_W1', 'Determined_W1
 
 
 def formatting_name(df, column):
+    '''
+    Function to formating name column of df
+    :param df: dataframe
+    :param column: name
+    :return: returns formatted df
+    '''
     df[column] = df[column].str.lower()
     return df
 
 
 def clean_weeks_columns(df, columns_list):
+    '''
+    Converts Floats to integers
+    :param df: dataframe
+    :param columns_list:
+    :return: formatted df
+    '''
     for column in columns_list:
         df[column] = df[column].astype('Int64')
     return df
