@@ -36,10 +36,11 @@ def create_weaknesses_list(u_id, weaknesses):
     return weaknesses_list
 
 
-def get_fields(content, content_type):
+def get_fields(content, content_type, id=0):
     # Headers for main.csv
     if content_type == "main":
-        return [content["name"],
+        return [id,
+                content["name"],
                 content["date"],
                 content["self_development"],
                 content["geo_flex"],
@@ -113,7 +114,7 @@ def extract(talent_object):
             file_content = obj.get()['Body'].read().decode('utf-8')
             json_content = json.loads(file_content)
 
-            person = get_fields(json_content, "main")
+            person = get_fields(json_content, "main",u_id)
             main_talent.append(person)
 
             # Skip getting self scores if they are not available.
@@ -127,6 +128,7 @@ def extract(talent_object):
             weaknesses_sublist = get_fields(json_content, "weaknesses")
             weaknesses.append(create_weaknesses_list(u_id, weaknesses_sublist))
 
+            print(u_id)
     # Join lists within lists.
     tech_self_scores = sum(tech_self_scores, [])
     strengths = sum(strengths, [])
