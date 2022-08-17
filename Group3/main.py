@@ -3,6 +3,7 @@ import pandas as pd
 import io
 import numpy as np
 import csv
+from datetime import datetime
 
 '''This is to see the table as a whole and not as a cut off table'''
 desired_width=320
@@ -71,6 +72,79 @@ def extract_info(text_file_names):
     csvfile.to_csv('output.csv') # converts the data frame to a csv called output.csv
     return csvfile # returns csv file that contains all the merged data from text files
 
+def drop_empty_values(csvfile):
+    for row in csvfile['FullName']:
+        if row == '' or row == ' ':
+            csvfile.dropna()
+    print(csvfile)
+
+def clean_start_date(csvfile):
+    start_date_list = []
+    for entry in csvfile['Start_Date']:
+        split_date = entry.split()
+        year = split_date[3]
+        month = str(monthToNum(split_date[2])).zfill(2)
+        day = split_date[1].zfill(2)
+        date = str(day) + '/' + str(month) + '/' + str(year)
+        x = datetime.strptime(date, '%d/%m/%Y').date()
+        clean_date = x.strftime("%d/%m/%Y")
+        start_date_list.append(clean_date)
+
+    csvfile['Start_Date'] = pd.Series(start_date_list)
+
+def monthToNum(shortMonth):
+    return {
+            'January': 1,
+            'February': 2,
+            'March': 3,
+            'April': 4,
+            'May': 5,
+            'June': 6,
+            'July': 7,
+            'August': 8,
+            'September': 9,
+            'October': 10,
+            'November': 11,
+            'December': 12
+    }[shortMonth]
+
+def clean_academy(csvfile):
+    academy_list = []
+    for academy in csvfile['Academy']:
+        academy_name = academy.split()
+        academy_name_only = academy_name[0]
+        academy_list.append(academy_name_only)
+    csvfile['Academy'] = pd.Series(academy_list)
+
+def clean_fullname(csvfile):
+    fullname_list = []
+    for fullname in csvfile['FullName']:
+        clean_fn = fullname.lower()
+        fullname_list.append(clean_fn)
+
+    csvfile['FullName'] = pd.Series(fullname_list)
+
+def clean_presentation(csvfile):
+    percentage_list = []
+    for fraction in csvfile['Presentation']:
+        fractions = str(fraction)
+        split_fraction = fractions.split('/')
+        numerator = split_fraction[0]
+        print(numerator)
+        denominator = split_fraction[1]
+        ptc_score = (float(numerator)/float(denominator)) * 100
+        percentage_list.append(ptc_score)
+
+    csvfile['Presentation'] = pd.Series(percentage_list)
+
+
 test = getting_text_file_names()
-extract_info(test)
+csvfile = extract_info(test)
+drop_empty_values(csvfile)
+#clean_start_date(csvfile)
+#clean_academy(csvfile)
+#clean_fullname(csvfile)
+#clean_presentation(csvfile)
+
+print(csvfile)
 
