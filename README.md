@@ -5,7 +5,7 @@ This project contains resources which creates an ETL pipeline to track a progres
 
 The pipeline contains data from an Amazon S3 data lake which includes:
 
-1) Academy Data - Consists of the Spartans trainer and the weekly scored competency results they received.
+1) Academy Data - Consists of the Spartan trainer and the weekly scored competency results Spartans have received.
 
 2) Talent Data - Details of applicants who have been invited to attend a Sparta Assessment day and the day they will be attending
 
