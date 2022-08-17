@@ -74,9 +74,11 @@ def extract_info(text_file_names):
 
 def drop_empty_values(csvfile):
     for row in csvfile['FullName']:
-        if row == '' or row == ' ':
-            csvfile.dropna()
-    print(csvfile)
+        if row == '':
+            csvfile.dropna(inplace=True)
+    csvfile2 = csvfile.reset_index()
+    csvfile2.drop(['index'], axis=1, inplace=True)
+    return csvfile2
 
 def clean_start_date(csvfile):
     start_date_list = []
@@ -130,21 +132,32 @@ def clean_presentation(csvfile):
         fractions = str(fraction)
         split_fraction = fractions.split('/')
         numerator = split_fraction[0]
-        print(numerator)
         denominator = split_fraction[1]
-        ptc_score = (float(numerator)/float(denominator)) * 100
+        ptc_score = round((float(numerator)/float(denominator)) * 100, 2)
         percentage_list.append(ptc_score)
 
     csvfile['Presentation'] = pd.Series(percentage_list)
 
+def clean_psycho_data(csvfile):
+    percentage_list = []
+    for fraction in csvfile['Psychometrics']:
+        fractions = str(fraction)
+        split_fraction = fractions.split('/')
+        numerator = split_fraction[0]
+        denominator = split_fraction[1]
+        ptc_score = (float(numerator) / float(denominator)) * 100
+        percentage_list.append(ptc_score)
+
+    csvfile['Psychometrics'] = pd.Series(percentage_list)
 
 test = getting_text_file_names()
 csvfile = extract_info(test)
-drop_empty_values(csvfile)
-#clean_start_date(csvfile)
-#clean_academy(csvfile)
-#clean_fullname(csvfile)
-#clean_presentation(csvfile)
+new = drop_empty_values(csvfile)
+clean_start_date(new)
+clean_academy(new)
+clean_fullname(new)
+clean_presentation(new)
+clean_psycho_data(new)
 
-print(csvfile)
+new.to_csv('clean_entry_test_data.csv')
 
