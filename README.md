@@ -12,3 +12,5 @@ The pipeline contains data from an Amazon S3 data lake which includes:
 3) Sparta Assessment day - Presentation and Psychometric test results of individuals
 
 4) Applicant review -  Overall performance results of individuals who attended the Sparta Assessment day
+
+Extracted Data is then transformed within our data loaded into *** for querying
