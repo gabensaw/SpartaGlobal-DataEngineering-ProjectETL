@@ -14,3 +14,7 @@ The pipeline contains data from an Amazon S3 data lake which includes:
 4) Applicant review -  Overall performance results of individuals who attended the Sparta Assessment day
 
 Extracted Data is then transformed within our program and loaded into PostgreSQL for querying
+
+# Prerequisites
+
+Latest version of PostgreSQL
