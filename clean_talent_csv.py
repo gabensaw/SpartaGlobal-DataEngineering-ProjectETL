@@ -2,7 +2,7 @@ import pandas as pd
 
 pd.set_option('display.max_columns', None)
 
-df_talent = pd.read_csv('talent.csv', encoding="ISO-8859-1") #read the talent.csv file
+df_talent = pd.read_csv('output/talent.csv', encoding="ISO-8859-1")  # read the talent.csv file
 
 
 def drop_column(df, column_name):
@@ -13,6 +13,17 @@ def drop_column(df, column_name):
     :return: returns the new dataframe
     '''
     df.drop(column_name, inplace=True, axis=1)
+    return df
+
+
+def add_index(df, index_name):
+    '''
+    Function add a id column to dataframe
+    :param df: current dataframe
+    :param index_name: the index column name
+    :return: returns the new dataframe
+    '''
+    df.insert(0, index_name, range(1, 1 + len(df_talent)))
     return df
 
 
@@ -102,6 +113,7 @@ def date_merge(df, day_col_name, month_col_name):
 
 
 drop_column(df_talent, 'id')
+add_index(df_talent, 'id')
 formatting_name(df_talent, 'name')
 clean_address(df_talent)
 clean_phone_numbers(df_talent)
@@ -113,4 +125,4 @@ drop_column(df_talent, 'invited_date')
 drop_column(df_talent, 'month')
 formatting_name(df_talent, 'invited_by')
 
-df_talent.to_csv('clean_applicants.csv', index=False)
+df_talent.to_csv('output/clean_applicants.csv', index=False)
