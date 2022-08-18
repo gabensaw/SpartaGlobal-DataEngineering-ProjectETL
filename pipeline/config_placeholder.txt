@@ -1,0 +1,20 @@
+### To go in config_manager.py
+
+BUCKET_NAME = _config['default']['bucket_name']
+CSV_MAIN_TALENT = _config['default']['csv_main_talent']
+CSV_APPLICANTS = _config['default']['csv_applicants']
+CSV_STRENGTHS = _config['default']['csv_strengths']
+CSV_WEAKNESSES = _config['default']['csv_weaknesses']
+CSV_ACADEMY = _config['default']['csv_academy']
+CSV_ENTRY_TEST = _config['csv_entry_test']
+
+
+### To go in config.ini
+BUCKET_NAME = data-eng-31-final-project
+CSV_MAIN_TALENT = clean_main_talent.csv
+CSV_APPLICANTS = clean_applicants.csv
+CSV_STRENGTHS = strengths.csv
+CSV_WEAKNESSES = weaknesses.csv
+CSV_TECH_SCORES = tech_self_score.csv
+CSV_ACADEMY = clean_academy.csv
+CSV_ENTRY_TEST = clean_entry_test_data.csv
