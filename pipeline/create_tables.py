@@ -86,13 +86,19 @@ def create_tables():
         """
         CREATE TABLE "uni" (
         "uni_id" INT GENERATED ALWAYS AS IDENTITY,
-        "candidate_id" INT,
-        "uni_name" VARCHAR,
         "uni_degree" VARCHAR,
-        PRIMARY KEY ("uni_id"),
-        CONSTRAINT "FK_uni.candidate_id"
+        PRIMARY KEY ("uni_id"));""",
+
+        """
+        CREATE TABLE "uni_junction" (
+        "candidate_id" INT,
+        "uni_id" INT,
+        CONSTRAINT "FK_uni_junction.candidate_id"
         FOREIGN KEY ("candidate_id")
-        REFERENCES "candidates"("candidate_id")
+        REFERENCES "candidates"("candidate_id"),
+        CONSTRAINT "FK_uni_junction.uni_id"
+        FOREIGN KEY ("uni_id")
+        REFERENCES "uni"("uni_id")
         );""",
 
         """
