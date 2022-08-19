@@ -1,4 +1,4 @@
-id,name,gender,dob,email,city,address,postcode,phone_number,uni,degree,invited_by,start_date
+candidate_id,name,gender,dob,email,city,address,postcode,phone_number,uni,degree,invited_by,start_date
 1,esme trusslove,Female,04/08/1994,etrusslove0@google.es,Swindon,22056 lerdahl avenue,SN1,+442957830228,"Saint George's Hospital Medical School, University of London",2:1,bruno bellbrook,10/04/2019
 2,matthaeus audas,Male,,maudas1@mapquest.com,Charlton,263 nelson trail,OX12,+449577280155,Keele University,2:1,doris bellasis,30/04/2019
 3,cherey tollfree,Female,08/12/1992,ctollfree2@netvibes.com,Weston,69 coleman court,GU32,+445887496002,"King's College London, University of London",2:1,gismo tilling,25/04/2019

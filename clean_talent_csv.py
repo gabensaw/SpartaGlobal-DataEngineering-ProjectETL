@@ -113,7 +113,7 @@ def date_merge(df, day_col_name, month_col_name):
 
 
 drop_column(df_talent, 'id')
-add_index(df_talent, 'id')
+add_index(df_talent, 'candidate_id')
 formatting_name(df_talent, 'name')
 clean_address(df_talent)
 clean_phone_numbers(df_talent)
