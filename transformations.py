@@ -85,6 +85,35 @@ def stream_candidates_junction(clean_a_df, clean_mt_df, stream_df):
     return c_merged_stream
 
 
+def create_behaviors_df():
+    behaviors = ["Analytic", "Independent", "Determined", "Professional", "Studious", "Imaginative"]
+    behavior_ID = [ID for ID in range(1, len(behaviors) + 1)]
+
+    behaviors_df = pd.DataFrame()
+
+    behaviors_df.insert(0, "behaviour_id", behavior_ID, True)
+    behaviors_df.insert(1, "behaviour", behaviors, True)
+
+    return behaviors_df
+
+
+def create_sparta_day_results_df(clean_entry_test_data_csv, clean_applicants_csv):
+    sparta_day_results_df = clean_entry_test_data_csv
+    sparta_day_results_df.insert(0, 'scores_id', range(1, len(sparta_day_results_df) + 1))
+
+    candidates_df = clean_applicants_csv
+    candidates_df = candidates_df[['name', 'candidate_id']]
+
+    sparta_day_results_df["name"] = sparta_day_results_df["name"].str.rstrip(' ')
+    sparta_day_results_df = pd.merge(sparta_day_results_df, candidates_df, on='name')
+
+    sparta_day_results_df = sparta_day_results_df[
+        ["scores_id", "candidate_id", 'psychometrics', 'presentation', 'academy', 'start_date']].drop_duplicates(
+        subset='scores_id')
+    sparta_day_results_df = sparta_day_results_df
+    return sparta_day_results_df
+
+
 #### inputing to sql tables functions
 def create_uni_table(df):
     df.to_sql('university', con=connection, if_exists='replace', index=False)
@@ -126,12 +155,26 @@ def create_academy_table(df):
     return True
 
 
-def stream_candidate_junction(df):
+def create_stream_candidate_junction(df):
     df.to_sql('stream_candidate_junction', con=connection, if_exists='replace', index=False)
     connection.execute('ALTER TABLE stream_candidate_junction ADD PRIMARY KEY (candidate_id, stream_id);')
     connection.execute('ALTER TABLE stream_candidate_junction ADD FOREIGN KEY (candidate_id) REFERENCES candidate;')
     connection.execute('ALTER TABLE stream_candidate_junction ADD FOREIGN KEY (stream_id) REFERENCES stream;')
     return True
+
+
+def create_behaviors_table(df):
+    df.to_sql('behaviours', con=connection, if_exists='replace', index=False)
+    connection.execute('ALTER TABLE behaviours ADD PRIMARY KEY (behaviour_id);')
+    return True
+
+
+def create_sparta_day_table(df):
+    df.to_sql('sparta_day_results', con=connection, if_exists='replace', index=False)
+    connection.execute('ALTER TABLE sparta_day_results ADD PRIMARY KEY (scores_id);')
+    connection.execute('ALTER TABLE sparta_day_results ADD FOREIGN KEY (candidate_id) REFERENCES candidate;')
+    return True
+
 
 # df matching to SQL table
 candidates_df = create_candidates_df(clean_applicants_df)
@@ -141,16 +184,19 @@ stream_df = create_stream_df(clean_main_talent_df)
 trainers_df = create_trainers_df(clean_main_talent_df, stream_df, clean_academy_df)
 academy_df = create_academy_df(clean_entry_df, clean_academy_df, trainers_df)
 stream_candidates_df = stream_candidates_junction(clean_applicants_df, clean_main_talent_df, stream_df)
-
+behaviour_df = create_behaviors_df()
+sparta_day_results_df = create_sparta_day_results_df(clean_entry_df, clean_applicants_df)
 
 # tables creation
-# create_candidates_table(candidates_df)
-# create_uni_table(uni_df)
-# create_uni_candidates_table(uni_candidates_df)
-# create_stream_table(stream_df)
-# create_trainer_table(trainers_df)
-# create_academy_table(academy_df)
-# stream_candidate_junction(stream_candidates_df)
+create_candidates_table(candidates_df)
+create_uni_table(uni_df)
+create_uni_candidates_table(uni_candidates_df)
+create_stream_table(stream_df)
+create_trainer_table(trainers_df)
+create_academy_table(academy_df)
+create_stream_candidate_junction(stream_candidates_df)
+create_behaviors_table(behaviour_df)
+create_sparta_day_table(sparta_day_results_df)
 
 # connection close
 connection.close()
