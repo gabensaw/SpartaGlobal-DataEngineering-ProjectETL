@@ -121,7 +121,7 @@ def clean_academy(csvfile):
 def clean_fullname(csvfile):
     fullname_list = []
     for fullname in csvfile['FullName']:
-        clean_fn = fullname.lower()
+        clean_fn = fullname.lower().strip()
         fullname_list.append(clean_fn)
 
     csvfile['FullName'] = pd.Series(fullname_list)
@@ -159,5 +159,5 @@ clean_fullname(new)
 clean_presentation(new)
 clean_psycho_data(new)
 
-new.to_csv('clean_entry_test_data.csv')
+new.to_csv('output/clean_entry_test_data.csv')
 
