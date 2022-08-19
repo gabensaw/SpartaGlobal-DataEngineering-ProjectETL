@@ -18,3 +18,4 @@ Extracted Data is then transformed within our program and loaded into PostgreSQL
 # Prerequisites
 
 Latest version of PostgreSQL
+Latest version of Python
