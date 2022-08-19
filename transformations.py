@@ -42,22 +42,9 @@ def create_uni_candidates_junction(u_df, clean_a_df):
 
 
 def create_academy_df(df):
-    df = pd.read_csv("output/clean_entry_test_data.csv")
-    df = df['Academy']
-    df = df.drop_duplicates()
-    df = df.to_frame()
-
-    academy_ID_list = []
-    i = 1
-    for academy in df["Academy"]:
-        academy_ID_list.append(i)
-        # print(academy)
-        i += 1
-
-    df.insert(0, "Academy_ID", academy_ID_list, True)
-    df.reset_index(drop=True, inplace=True)
-    df = df.rename(columns={'Academy': 'Location'})
-
+    df = df[['academy']].dropna().drop_duplicates()
+    df.insert(0, 'academy_id', range(1, 1 + len(df)))
+    df = df.rename(columns={'academy': 'location'})
     return df
 
 
@@ -86,7 +73,8 @@ def create_uni_candidates_table(df):
 candidates_df = create_candidates_df(clean_applicants_df)
 uni_df = create_uni_df(clean_applicants_df)
 uni_candidates_df = create_uni_candidates_junction(uni_df, clean_applicants_df)
-academy_df = create_academy_df(clean_academy_df)
+academy_df = create_academy_df(clean_entry_df)
+print(academy_df)
 
 # tables creation
 # create_candidates_table(candidates_df)
@@ -95,6 +83,3 @@ academy_df = create_academy_df(clean_academy_df)
 
 # connection close
 connection.close()
-
-# print(candidates_df.middle_name[candidates_df.middle_name.notna()].tail(50))
-print(create_uni_df(clean_applicants_df))
