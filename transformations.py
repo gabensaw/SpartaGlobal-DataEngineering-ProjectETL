@@ -1,13 +1,13 @@
 import pandas as pd
 from sqlalchemy import create_engine
 
-####### connection to DB
+# connection to DB
 conn_string = 'postgresql://postgres:admin@localhost:5432/postgres'
 
 db = create_engine(conn_string)
 connection = db.connect()
 
-#### work on DF to prepare them to SQL
+# work on DF to prepare them to SQL
 pd.set_option('display.max_columns', None)
 
 clean_applicants_df = pd.read_csv('C:/Users/Gaben/Desktop/Data-31-Project-ETL/output/clean_applicants.csv',
@@ -18,8 +18,13 @@ clean_main_talent_df = pd.read_csv('C:/Users/Gaben/Desktop/Data-31-Project-ETL/o
 
 
 def create_candidates_df(df):
+    df['first_name'] = clean_applicants_df.name.apply(lambda x: x.split()[0])
+    df['middle_name'] = clean_applicants_df.name.apply(lambda x: x.split()[1:-1])
+    df['middle_name'] = clean_applicants_df.middle_name.apply(lambda x: ' '.join(x) if x != [] else pd.NA)
+    df['last_name'] = clean_applicants_df.name.apply(lambda x: x.split()[-1])
     candidates_df = df[
-        ['candidate_id', 'name', 'gender', 'dob', 'email', 'city', 'address', 'postcode', 'phone_number']]
+        ['candidate_id', 'first_name', 'middle_name', 'last_name', 'gender', 'dob', 'email', 'city', 'address',
+         'postcode', 'phone_number']]
     return candidates_df
 
 
@@ -36,7 +41,27 @@ def create_uni_candidates_junction(u_df, clean_a_df):
     return uni_candidate_df
 
 
-#### to sql functions
+def create_academy_df(df):
+    df = pd.read_csv("output/clean_entry_test_data.csv")
+    df = df['Academy']
+    df = df.drop_duplicates()
+    df = df.to_frame()
+
+    academy_ID_list = []
+    i = 1
+    for academy in df["Academy"]:
+        academy_ID_list.append(i)
+        # print(academy)
+        i += 1
+
+    df.insert(0, "Academy_ID", academy_ID_list, True)
+    df.reset_index(drop=True, inplace=True)
+    df = df.rename(columns={'Academy': 'Location'})
+
+    return df
+
+
+#### inputing to sql tables functions
 def create_uni_table(df):
     df.to_sql('universities', con=connection, if_exists='replace', index=False)
     connection.execute('ALTER TABLE universities ADD PRIMARY KEY (uni_id);')
@@ -57,17 +82,19 @@ def create_uni_candidates_table(df):
     return True
 
 
+# df matching to SQL table
 candidates_df = create_candidates_df(clean_applicants_df)
 uni_df = create_uni_df(clean_applicants_df)
 uni_candidates_df = create_uni_candidates_junction(uni_df, clean_applicants_df)
+academy_df = create_academy_df(clean_academy_df)
 
+# tables creation
+# create_candidates_table(candidates_df)
+# create_uni_table(uni_df)
+# create_uni_candidates_table(uni_candidates_df)
 
-
-########### tables creation
-create_candidates_table(candidates_df)
-create_uni_table(uni_df)
-create_uni_candidates_table(uni_candidates_df)
-
-
-#### connection close
+# connection close
 connection.close()
+
+# print(candidates_df.middle_name[candidates_df.middle_name.notna()].tail(50))
+print(create_uni_df(clean_applicants_df))
