@@ -65,13 +65,24 @@ def create_academy_df(clean_e_df, clean_a_df, trainers_df):
     clean_a_df = clean_a_df[['name', 'trainer']]
     trainers_df = trainers_df[['trainer_id', 'trainer']]
     academy_trainer_merged = pd.merge(left=clean_e_df, right=clean_a_df, left_on='name',
-                             right_on='name', how='inner')
+                                      right_on='name', how='inner')
     trainers_at_merged = pd.merge(left=trainers_df, right=academy_trainer_merged, left_on='trainer',
-                                      right_on='trainer', how='inner')
+                                  right_on='trainer', how='inner')
     trainers_at_merged = trainers_at_merged[['trainer_id', 'academy']].drop_duplicates()
     trainers_at_merged.insert(0, 'academy_id', range(1, 1 + len(trainers_at_merged)))
     trainers_at_merged = trainers_at_merged.rename(columns={'academy': 'location'})
     return trainers_at_merged
+
+
+def stream_candidates_junction(clean_a_df, clean_mt_df, stream_df):
+    clean_a_df = clean_a_df[['candidate_id', 'name']]
+    clean_mt_df = clean_mt_df[['date', 'course_interest', 'name']]
+    cleaned_merged = pd.merge(left=clean_a_df, right=clean_mt_df, left_on='name',
+                              right_on='name', how='inner')
+    c_merged_stream = pd.merge(left=cleaned_merged, right=stream_df, left_on=['date', 'course_interest'],
+                               right_on=['course_start_date', 'course_name'], how='inner')
+    c_merged_stream = c_merged_stream[['candidate_id', 'stream_id']].drop_duplicates()
+    return c_merged_stream
 
 
 #### inputing to sql tables functions
@@ -111,8 +122,16 @@ def create_trainer_table(df):
 def create_academy_table(df):
     df.to_sql('academy', con=connection, if_exists='replace', index=False)
     connection.execute('ALTER TABLE academy ADD PRIMARY KEY (academy_id);')
+    connection.execute('ALTER TABLE academy ADD FOREIGN KEY (trainer_id) REFERENCES trainer;')
     return True
 
+
+def stream_candidate_junction(df):
+    df.to_sql('stream_candidate_junction', con=connection, if_exists='replace', index=False)
+    connection.execute('ALTER TABLE stream_candidate_junction ADD PRIMARY KEY (candidate_id, stream_id);')
+    connection.execute('ALTER TABLE stream_candidate_junction ADD FOREIGN KEY (candidate_id) REFERENCES candidate;')
+    connection.execute('ALTER TABLE stream_candidate_junction ADD FOREIGN KEY (stream_id) REFERENCES stream;')
+    return True
 
 # df matching to SQL table
 candidates_df = create_candidates_df(clean_applicants_df)
@@ -121,16 +140,17 @@ uni_candidates_df = create_uni_candidates_junction(uni_df, clean_applicants_df)
 stream_df = create_stream_df(clean_main_talent_df)
 trainers_df = create_trainers_df(clean_main_talent_df, stream_df, clean_academy_df)
 academy_df = create_academy_df(clean_entry_df, clean_academy_df, trainers_df)
+stream_candidates_df = stream_candidates_junction(clean_applicants_df, clean_main_talent_df, stream_df)
 
 
-print(academy_df)
 # tables creation
 # create_candidates_table(candidates_df)
 # create_uni_table(uni_df)
 # create_uni_candidates_table(uni_candidates_df)
-# create_academy_table(academy_df)
 # create_stream_table(stream_df)
 # create_trainer_table(trainers_df)
+# create_academy_table(academy_df)
+# stream_candidate_junction(stream_candidates_df)
 
 # connection close
 connection.close()
